@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  botman-zoom:
+    container_name: botman-zoom
+    build: ./docker
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 80:80
+    volumes:
+      - ./app_botman:/app
+    environment:
+      - ZOOM_BOT_CLIENT_ID=
+      - ZOOM_BOT_CLIENT_SECRET=
+      - ZOOM_BOT_JID=
+      - ZOOM_BOT_VERIFICATION_TOKEN=
+      - ZOOM_API_KEY=
+      - ZOOM_API_SECRET=
+      - ZOOM_API_VERIFICATION_TOKEN=
+      - ZOOM_ACTIONS_LIMIT_DISPLAY=1000
+      - SEND_MESSAGE_SECRET=
