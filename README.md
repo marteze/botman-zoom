@@ -15,18 +15,29 @@ Take note of https address. Leave this terminal open.
 ### Create and configure the chatbot in Zoom Marketplace
 
 1. Access the Zoom Marketplace at <https://marketplace.zoom.us/> and sing in.
-2. Goto to Develop -> Build App<br>
+2. Goto to Develop -> Build App<br>.
 ![image](https://user-images.githubusercontent.com/8368009/163389785-04f96f87-6281-433a-a7ce-34b900b34abf.png)
-3. Create a JWT App if you dont have yet. This is necessary to find user's data.<br>
+3. Create a JWT App if you dont have yet. This is necessary to BotMan find user's data.<br>
 ![image](https://user-images.githubusercontent.com/8368009/163390503-49159f16-dfe7-4f75-96d8-1edb00cdf98d.png)<br>
-Define a name to the JWT App<br>
+Define a name to the JWT App:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163390836-dc3d83a4-51d2-43ea-8182-34c17b5c63c6.png)<br>
-Define all obrigatory fields<br>
+Define all obrigatory fields:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163391319-44641c25-5694-46fa-9fa5-abfa2547d25b.png)<br>
-In the App Credentials you'll find `ZOOM_API_KEY` and `ZOOM_API_SECRET` values to put in docker-compose.yml ahead<br>
+In the App Credentials page you'll find `ZOOM_API_KEY` and `ZOOM_API_SECRET` values to put in docker-compose.yml ahead<br>
 ![image](https://user-images.githubusercontent.com/8368009/163391908-efc36b74-7fdb-48d6-a507-c6d19ee66d50.png)<br>
-In the Feature you'll finda `ZOOM_API_VERIFICATION_TOKEN` value to put in docker-compose.yml ahead<br>
+In the Feature page you'll finda `ZOOM_API_VERIFICATION_TOKEN` value to put in docker-compose.yml ahead<br>
 ![image](https://user-images.githubusercontent.com/8368009/163392978-4afc3b06-2906-45a7-ac46-238efec68ae4.png)
+4. Create a chatbot:<br>
+![image](https://user-images.githubusercontent.com/8368009/163394001-56c9b2b7-227c-4309-b429-ba4de6377ebd.png)<br>
+Define a name to your chatbot:<br>
+![image](https://user-images.githubusercontent.com/8368009/163396566-f8a70d72-a12c-4183-a3ac-8858f83218c5.png)<br>
+In App Credentials fill the Redirect URL for OAuth with your Ngrok https address + "/botman/authorize_chatbot":<br>
+![image](https://user-images.githubusercontent.com/8368009/163397792-5cc63a54-17d1-4415-918d-09b46af94544.png)
+In the App Credentials page you'll find `ZOOM_BOT_CLIENT_ID` and `ZOOM_BOT_CLIENT_SECRET` values to put in docker-compose.yml ahead<br>
+![image](https://user-images.githubusercontent.com/8368009/163399135-5b0eb54a-9be5-4a8b-a9dd-cc90dbc4b1f8.png)<br>
+In the Information page define Short description, Long description, Company Name, Category, Developer Contact Name, Developer Contact E-mail, :<br>
+![image](https://user-images.githubusercontent.com/8368009/163399650-d3813a98-279b-4f8b-81b2-f4975bba7eb2.png)
+
 
 
 ### Create, configure and run BotMan container
