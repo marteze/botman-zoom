@@ -63,8 +63,14 @@ After save you will see the `ZOOM_BOT_JID` value to put in docker-compose.yml ah
 `php artisan key:generate`<br>
 `composer update`<br>
 
-From now you can access <http://localhost/botman/tinker> to verify if the application is running correctly.<br>
+From now you can install your brand new chatbot in your Zoom Client. Back to Zoom Marketplace, inside chatbot admin pages in Local Test page click Add button.<br>
+![image](https://user-images.githubusercontent.com/8368009/163424514-ce7cebea-c8fd-4fea-aeb4-2845e88bcf0e.png)<br>
+And allow the app:<br>
+![image](https://user-images.githubusercontent.com/8368009/163423581-5eab96f3-3e65-4127-b20c-df0f5603bd0f.png)<br>
+After this the chatbot must appear in the your client like this:<br>
+![image](https://user-images.githubusercontent.com/8368009/163423832-380266e0-5cba-4cb8-b683-d605d53c3ccb.png)<br>
 Send "hi" to the chatbot and he must reply. Send "start conversation" to a interactive conversation.
+![image](https://user-images.githubusercontent.com/8368009/163424044-e5bfface-29b8-49e6-882d-8c298b96e83f.png)
 
 ## Programming the chatbot
 
