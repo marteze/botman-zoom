@@ -89,6 +89,7 @@ You can reply/send messages in three formats:
 ![image](https://user-images.githubusercontent.com/8368009/163427908-8327588e-7c01-4567-9b36-01c7db578191.png)<br>
 You can make your container send messages programmatically (without any user send message before). The URL to this is `http://localhost/botman/send-message`. Like this (in Postman):<br>
 ![image](https://user-images.githubusercontent.com/8368009/163429878-48f11694-7b51-4796-8bd6-f11dfffe80bf.png)<br>
+The message value accepts the three formats described above.<br>
 We highly recommend to define the `SEND_MESSAGE_SECRET` in your docker-compose.yml file to protect this endpoint from non-authorized calls. If you define this variable you must pass the value in Authorization header, like this:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163430587-1a083f65-8d86-46b1-80d8-b3779314718f.png)
 
