@@ -21,7 +21,7 @@ Take note of https address. Leave this terminal open.
 ![image](https://user-images.githubusercontent.com/8368009/163390503-49159f16-dfe7-4f75-96d8-1edb00cdf98d.png)<br>
 Define a name to the JWT App:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163390836-dc3d83a4-51d2-43ea-8182-34c17b5c63c6.png)<br>
-Define all obrigatory fields:<br>
+Define all obligatory fields:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163391319-44641c25-5694-46fa-9fa5-abfa2547d25b.png)<br>
 In the App Credentials page you'll find `ZOOM_API_KEY` and `ZOOM_API_SECRET` values to put in docker-compose.yml ahead<br>
 ![image](https://user-images.githubusercontent.com/8368009/163391908-efc36b74-7fdb-48d6-a507-c6d19ee66d50.png)<br>
