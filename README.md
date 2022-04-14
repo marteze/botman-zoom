@@ -81,10 +81,14 @@ For more information about programming the chatbot access the BotMan's documenta
 ### How to use the Zoom Driver to send messages
 
 You can reply/send messages in three formats:
-1. A simple text without markdown:<br>
+1. Simple text without markdown:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163426676-787666c8-928e-4df6-ac52-ff3ba68d2d82.png)<br>
-2. A simple text with markdown:<br>
+2. Simple text with markdown:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163426963-49ac9802-abc9-466b-b651-5be8e6f879c7.png)<br>
-3. A full custom message structured like the Zoom's documentation (more information in <https://marketplace.zoom.us/docs/guides/chatbots/customizing-messages>):
+3. Full custom message structured like the Zoom's documentation (more information in <https://marketplace.zoom.us/docs/guides/chatbots/customizing-messages>):
 ![image](https://user-images.githubusercontent.com/8368009/163427908-8327588e-7c01-4567-9b36-01c7db578191.png)<br>
+You can make your container send messages programmatically (without any user send message before). The URL to this is `http://localhost/botman/send-message`. Like this (in Postman):<br>
+![image](https://user-images.githubusercontent.com/8368009/163429878-48f11694-7b51-4796-8bd6-f11dfffe80bf.png)<br>
+We highly recommend to define the `SEND_MESSAGE_SECRET` in your docker-compose.yml file to protect this endpoint from non-authorized calls. If you define this variable you must pass the value in Authorization header, like this:<br>
+![image](https://user-images.githubusercontent.com/8368009/163430587-1a083f65-8d86-46b1-80d8-b3779314718f.png)
 
