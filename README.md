@@ -44,19 +44,19 @@ You must define this fields too:<br>
 In the Feature Page, in Chat Subscription you'll find `ZOOM_BOT_VERIFICATION_TOKEN` value to put in docker-compose.yml ahead. Define a Slash Command and Bot endpoint URL with your Ngrok https address + "/botman" like this and click Save button:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163401512-215f203d-035c-4ee3-981e-71766c186b96.png)<br>
 After save you will see the `ZOOM_BOT_JID` value to put in docker-compose.yml ahead:<br>
-![image](https://user-images.githubusercontent.com/8368009/163403221-da84aad9-78e5-4ca9-a411-6bbb8e1fa02d.png)
-
-
+![image](https://user-images.githubusercontent.com/8368009/163403221-da84aad9-78e5-4ca9-a411-6bbb8e1fa02d.png)<br>
+**Remember**: If you restart the Ngrok service you'll need update all fields with the new URL address.
 
 ### Create, configure and run BotMan container
 
 1. Install Docker. To do this go to <https://www.docker.com/get-started/><br>
 2. Make a clone of this repository in your computer or download this project in zip format and extract in your computer.<br>
-3. Inside the clone's directory run these commands to create the container and start him:<br>
+3. Edit the docker-compose.yml file and define the environment variables appointed above.<br>
+4. Inside the clone's directory run these commands to create the container and start him:<br>
 `docker-compose build`<br>
 `docker-compose up -d`<br>
 4. Run this command to access the container's shell:<br>
-`docker exec -it botman-starter bash`<br>
+`docker exec -it botman-zoom bash`<br>
 5. Inside the container's shell run these commands to create .env file, generate a key to the Laravel application and download/update composer's packages:<br>
 `cd /app/`<br>
 `cp .env.example .env`<br>
