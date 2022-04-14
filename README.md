@@ -31,8 +31,8 @@ In the Feature page you'll finda `ZOOM_API_VERIFICATION_TOKEN` value to put in d
 ![image](https://user-images.githubusercontent.com/8368009/163394001-56c9b2b7-227c-4309-b429-ba4de6377ebd.png)<br>
 Define a name to your chatbot:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163396566-f8a70d72-a12c-4183-a3ac-8858f83218c5.png)<br>
-In App Credentials fill the Redirect URL for OAuth with your Ngrok https address + "/botman/authorize_chatbot":<br>
-![image](https://user-images.githubusercontent.com/8368009/163397792-5cc63a54-17d1-4415-918d-09b46af94544.png)<br>
+In App Credentials fill the Redirect URL for OAuth with your Ngrok https address + "/botman/authorize-chatbot":<br>
+![image](https://user-images.githubusercontent.com/8368009/163422585-f028ebea-a782-40fc-b744-b07c0a51f2cf.png)<br>
 Define too the OAuth allow list like this:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163406506-fe7f82bc-1903-4cd3-bebe-c9999572ed8e.png)<br>
 In the App Credentials page you'll find `ZOOM_BOT_CLIENT_ID` and `ZOOM_BOT_CLIENT_SECRET` values to put in docker-compose.yml ahead<br>
