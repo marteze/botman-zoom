@@ -32,11 +32,19 @@ In the Feature page you'll finda `ZOOM_API_VERIFICATION_TOKEN` value to put in d
 Define a name to your chatbot:<br>
 ![image](https://user-images.githubusercontent.com/8368009/163396566-f8a70d72-a12c-4183-a3ac-8858f83218c5.png)<br>
 In App Credentials fill the Redirect URL for OAuth with your Ngrok https address + "/botman/authorize_chatbot":<br>
-![image](https://user-images.githubusercontent.com/8368009/163397792-5cc63a54-17d1-4415-918d-09b46af94544.png)
+![image](https://user-images.githubusercontent.com/8368009/163397792-5cc63a54-17d1-4415-918d-09b46af94544.png)<br>
+Define too the OAuth allow list like this:<br>
+![image](https://user-images.githubusercontent.com/8368009/163406506-fe7f82bc-1903-4cd3-bebe-c9999572ed8e.png)<br>
 In the App Credentials page you'll find `ZOOM_BOT_CLIENT_ID` and `ZOOM_BOT_CLIENT_SECRET` values to put in docker-compose.yml ahead<br>
 ![image](https://user-images.githubusercontent.com/8368009/163399135-5b0eb54a-9be5-4a8b-a9dd-cc90dbc4b1f8.png)<br>
 In the Information page define Short description, Long description, Company Name, Category, Developer Contact Name, Developer Contact E-mail, :<br>
-![image](https://user-images.githubusercontent.com/8368009/163399650-d3813a98-279b-4f8b-81b2-f4975bba7eb2.png)
+![image](https://user-images.githubusercontent.com/8368009/163399650-d3813a98-279b-4f8b-81b2-f4975bba7eb2.png)<br>
+You must define this fields too:<br>
+![image](https://user-images.githubusercontent.com/8368009/163405532-6b391e20-afc7-4eb5-bf3f-04f0d4a32ab7.png)<br>
+In the Feature Page, in Chat Subscription you'll find `ZOOM_BOT_VERIFICATION_TOKEN` value to put in docker-compose.yml ahead. Define a Slash Command and Bot endpoint URL with your Ngrok https address + "/botman" like this and click Save button:<br>
+![image](https://user-images.githubusercontent.com/8368009/163401512-215f203d-035c-4ee3-981e-71766c186b96.png)<br>
+After save you will see the `ZOOM_BOT_JID` value to put in docker-compose.yml ahead:<br>
+![image](https://user-images.githubusercontent.com/8368009/163403221-da84aad9-78e5-4ca9-a411-6bbb8e1fa02d.png)
 
 
 
