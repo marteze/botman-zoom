@@ -77,3 +77,14 @@ Send "hi" to the chatbot and he must reply. Send "start conversation" to a inter
 All modifications made into the code inside the `app_botman` directory in the host computer will reflect immediately in the running application inside container.
 
 For more information about programming the chatbot access the BotMan's documentation in <https://botman.io/2.0/welcome>.
+
+### How to use the Zoom Driver to send messages
+
+You can reply/send messages in three formats:
+1. A simple text without markdown:<br>
+![image](https://user-images.githubusercontent.com/8368009/163426676-787666c8-928e-4df6-ac52-ff3ba68d2d82.png)<br>
+2. A simple text with markdown:<br>
+![image](https://user-images.githubusercontent.com/8368009/163426963-49ac9802-abc9-466b-b651-5be8e6f879c7.png)<br>
+3. A full custom message structured like the Zoom's documentation (more information in <https://marketplace.zoom.us/docs/guides/chatbots/customizing-messages>):
+![image](https://user-images.githubusercontent.com/8368009/163427908-8327588e-7c01-4567-9b36-01c7db578191.png)<br>
+
